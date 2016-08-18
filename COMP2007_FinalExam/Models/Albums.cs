@@ -2,7 +2,7 @@
 // Student Number : 200203793
 // Data Modified : 17 Aug, 2016
 // Short Version History : 0.0.0.1
-// File Description : 
+// File Description : This model will get the album info from 
 
 namespace COMP2007_FinalExam.Models
 {
@@ -14,14 +14,7 @@ namespace COMP2007_FinalExam.Models
 
     public partial class Albums
     {
-        public Albums()
-        {
-
-        }
-        public Albums(string Title)
-        {
-            this.Title = Title;
-        }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
 
         public virtual int AlbumId { get; set; }
 
