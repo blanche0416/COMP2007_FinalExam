@@ -1,0 +1,18 @@
+﻿@using COMP2007_FinalExam.Models
+@model IEnumerable<Genres>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Genres</h2>
+<p>
+    Select from this @Model.Count() geners;
+</p>
+<ul>
+    @foreach(Genres item in Model)
+    {
+        <li>@Html.ActionLink(item.Name, "Browse", new { genres = item.Name})</li>
+    }
+</ul>
+

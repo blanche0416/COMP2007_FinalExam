@@ -1,0 +1,22 @@
+﻿@using COMP2007_FinalExam.Models
+@model Genres
+
+@{
+    ViewBag.Title = "Browse";
+}
+
+<h2>enre: @Model.Name</h2>
+
+<ul>
+    @foreach(Albums albums in Model.Albums)
+    {
+        <li>
+            @Html.ActionLink(albums.Title, "Details", new { id = albums.AlbumId})
+        </li>
+    }
+</ul>
+<br />
+<p>
+    @Html.ActionLink("Back To Genre List", "Index")
+</p>
+

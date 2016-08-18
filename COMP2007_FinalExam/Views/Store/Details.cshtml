@@ -1,0 +1,23 @@
+﻿@using COMP2007_FinalExam.Models
+@Model Albums
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Model.Title</h2>
+<div id="albums-details">
+    <p>
+        <em>Genre:</em>@Model.Genres.Name
+    </p>
+    <p>
+        <em>Artist:</em>@Model.Artists.Name
+    </p>
+    <p>
+        <em>Price:</em>@String.Format("{0:F}", Model.Price)
+    </p>
+    <p>
+        @Html.ActionLink("Back To Genre List", "Index")
+    </p>
+</div>
+
