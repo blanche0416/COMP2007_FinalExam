@@ -2,7 +2,7 @@
 // Student Number : 200203793
 // Data Modified : 17 Aug, 2016
 // Short Version History : 0.0.0.1
-// File Description : This is the store controller that
+// File Description : This is the store controller that get the index, browse and detail page
 
 using System;
 using System.Collections.Generic;
