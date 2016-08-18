@@ -14,23 +14,26 @@ namespace COMP2007_FinalExam.Models
 
     public partial class Albums
     {
+        public Album()
+        {
+
+        }
         public Albums(string Title)
         {
             this.Title = Title;
         }
 
-        [Key]
-        public int AlbumId { get; set; }
+        public virtual int AlbumId { get; set; }
 
-        public int GenreId { get; set; }
+        public virtual int GenreId { get; set; }
 
-        public int ArtistId { get; set; }
+        public virtual int ArtistId { get; set; }
 
-        public string Title { get; set; }
+        public virtual string Title { get; set; }
 
-        public decimal Price { get; set; }
+        public virtual decimal Price { get; set; }
 
-        public string AlbumArtUrl { get; set; }
+        public virtual string AlbumArtUrl { get; set; }
 
         public virtual Artists Artists { get; set; }
 

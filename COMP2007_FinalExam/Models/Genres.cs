@@ -8,20 +8,22 @@ namespace COMP2007_FinalExam.Models
 
     public partial class Genres
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Genres()
         {
-            Albums = new HashSet<Albums>();
+            
+        }
+  
+        public Genres(string Name)
+        {
+            this.Name = Name;
         }
 
-        [Key]
-        public int GenreId { get; set; }
+        public virtual int GenreId { get; set; }
 
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
 
-        public string Description { get; set; }
+        public virtual string Description { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Albums> Albums { get; set; }
+        public virtual List<Albums> Albums { get; set; }
     }
 }
