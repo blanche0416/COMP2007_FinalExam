@@ -14,7 +14,7 @@ namespace COMP2007_FinalExam.Models
 
     public partial class Albums
     {
-        public Album()
+        public Albums()
         {
 
         }
