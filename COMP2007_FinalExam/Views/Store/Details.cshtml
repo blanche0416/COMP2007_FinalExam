@@ -1,11 +1,20 @@
-﻿@using COMP2007_FinalExam.Models
+﻿<!--
+// Author's Name : Pui In Kwok
+// Student Number : 200203793
+// Data Modified : 17 Aug, 2016
+// Short Version History : 0.0.0.1
+// File Description : This view will get display all the info of the album that user choose
+-->
+
+
+@using COMP2007_FinalExam.Models
 @model Albums
 
 @{
     ViewBag.Title = "Details";
 }
 
-<h2>Model.Title</h2>
+<h2>@Model.Title</h2>
 <div id="albums-details">
     <p>
         <em>Genre:</em>@Model.Genres.Name

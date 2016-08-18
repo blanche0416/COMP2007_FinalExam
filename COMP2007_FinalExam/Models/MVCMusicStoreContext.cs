@@ -1,3 +1,10 @@
+// Author's Name : Pui In Kwok
+// Student Number : 200203793
+// Data Modified : 17 Aug, 2016
+// Short Version History : 0.0.0.1
+// File Description : This is the database connection and allow related models to 
+//                    get info from database
+
 namespace COMP2007_FinalExam.Models
 {
     using System;
